@@ -117,7 +117,6 @@ namespace DayAtTheRace
             this.labelInform1.Size = new System.Drawing.Size(185, 16);
             this.labelInform1.TabIndex = 2;
             this.labelInform1.Text = "Joe\'s bet";
-            this.labelInform1.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelInform2
             // 
@@ -128,7 +127,6 @@ namespace DayAtTheRace
             this.labelInform2.Size = new System.Drawing.Size(185, 16);
             this.labelInform2.TabIndex = 2;
             this.labelInform2.Text = "Bob\'s bet";
-            this.labelInform2.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelInform3
             // 
@@ -139,7 +137,6 @@ namespace DayAtTheRace
             this.labelInform3.Size = new System.Drawing.Size(185, 16);
             this.labelInform3.TabIndex = 2;
             this.labelInform3.Text = "Al\'s bet";
-            this.labelInform3.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelMinimumBet
             // 
@@ -217,7 +214,6 @@ namespace DayAtTheRace
             this.label4.Size = new System.Drawing.Size(129, 12);
             this.label4.TabIndex = 6;
             this.label4.Text = "bucks on dog number";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // numericUpDownDogNum
             // 
