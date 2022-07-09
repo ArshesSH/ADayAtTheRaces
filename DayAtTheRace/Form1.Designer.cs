@@ -33,23 +33,31 @@ namespace DayAtTheRace
             this.raceTrack = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.labelBets = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.labelInform1 = new System.Windows.Forms.Label();
+            this.labelInform2 = new System.Windows.Forms.Label();
+            this.labelInform3 = new System.Windows.Forms.Label();
             this.labelMinimumBet = new System.Windows.Forms.Label();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButtonBetter1 = new System.Windows.Forms.RadioButton();
+            this.radioButtonBetter2 = new System.Windows.Forms.RadioButton();
+            this.radioButtonBetter3 = new System.Windows.Forms.RadioButton();
             this.labelBetterName = new System.Windows.Forms.Label();
             this.buttonBets = new System.Windows.Forms.Button();
             this.numericUpDownCash = new System.Windows.Forms.NumericUpDown();
             this.label4 = new System.Windows.Forms.Label();
             this.numericUpDownDogNum = new System.Windows.Forms.NumericUpDown();
             this.buttonRace = new System.Windows.Forms.Button();
+            this.pictureBoxDog1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.raceTrack)).BeginInit();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCash)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDogNum)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // raceTrack
@@ -73,12 +81,12 @@ namespace DayAtTheRace
             this.groupBox1.Controls.Add(this.numericUpDownCash);
             this.groupBox1.Controls.Add(this.buttonBets);
             this.groupBox1.Controls.Add(this.labelBetterName);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
+            this.groupBox1.Controls.Add(this.labelInform3);
+            this.groupBox1.Controls.Add(this.labelInform2);
+            this.groupBox1.Controls.Add(this.labelInform1);
+            this.groupBox1.Controls.Add(this.radioButtonBetter3);
+            this.groupBox1.Controls.Add(this.radioButtonBetter2);
+            this.groupBox1.Controls.Add(this.radioButtonBetter1);
             this.groupBox1.Controls.Add(this.labelBets);
             this.groupBox1.Controls.Add(this.labelMinimumBet);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
@@ -100,38 +108,38 @@ namespace DayAtTheRace
             this.labelBets.TabIndex = 0;
             this.labelBets.Text = "Minimum bet";
             // 
-            // label1
+            // labelInform1
             // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label1.Location = new System.Drawing.Point(579, 68);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(185, 16);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Joe\'s bet";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.labelInform1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelInform1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelInform1.Location = new System.Drawing.Point(579, 68);
+            this.labelInform1.Name = "labelInform1";
+            this.labelInform1.Size = new System.Drawing.Size(185, 16);
+            this.labelInform1.TabIndex = 2;
+            this.labelInform1.Text = "Joe\'s bet";
+            this.labelInform1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label2
+            // labelInform2
             // 
-            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label2.Location = new System.Drawing.Point(579, 90);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(185, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Bob\'s bet";
-            this.label2.Click += new System.EventHandler(this.label1_Click);
+            this.labelInform2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelInform2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelInform2.Location = new System.Drawing.Point(579, 90);
+            this.labelInform2.Name = "labelInform2";
+            this.labelInform2.Size = new System.Drawing.Size(185, 16);
+            this.labelInform2.TabIndex = 2;
+            this.labelInform2.Text = "Bob\'s bet";
+            this.labelInform2.Click += new System.EventHandler(this.label1_Click);
             // 
-            // label3
+            // labelInform3
             // 
-            this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.label3.Location = new System.Drawing.Point(579, 111);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(185, 16);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Al\'s bet";
-            this.label3.Click += new System.EventHandler(this.label1_Click);
+            this.labelInform3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.labelInform3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.labelInform3.Location = new System.Drawing.Point(579, 111);
+            this.labelInform3.Name = "labelInform3";
+            this.labelInform3.Size = new System.Drawing.Size(185, 16);
+            this.labelInform3.TabIndex = 2;
+            this.labelInform3.Text = "Al\'s bet";
+            this.labelInform3.Click += new System.EventHandler(this.label1_Click);
             // 
             // labelMinimumBet
             // 
@@ -143,37 +151,38 @@ namespace DayAtTheRace
             this.labelMinimumBet.TabIndex = 0;
             this.labelMinimumBet.Text = "Minimum bet";
             // 
-            // radioButton1
+            // radioButtonBetter1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(23, 67);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(43, 16);
-            this.radioButton1.TabIndex = 1;
-            this.radioButton1.Text = "Joe";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButtonBetter1.AutoSize = true;
+            this.radioButtonBetter1.Location = new System.Drawing.Point(23, 67);
+            this.radioButtonBetter1.Name = "radioButtonBetter1";
+            this.radioButtonBetter1.Size = new System.Drawing.Size(43, 16);
+            this.radioButtonBetter1.TabIndex = 1;
+            this.radioButtonBetter1.Text = "Joe";
+            this.radioButtonBetter1.UseVisualStyleBackColor = true;
+            this.radioButtonBetter1.CheckedChanged += new System.EventHandler(this.radioButtonBetter1_CheckedChanged);
             // 
-            // radioButton2
+            // radioButtonBetter2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(23, 89);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(45, 16);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.Text = "Bob";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.radioButtonBetter2.AutoSize = true;
+            this.radioButtonBetter2.Location = new System.Drawing.Point(23, 89);
+            this.radioButtonBetter2.Name = "radioButtonBetter2";
+            this.radioButtonBetter2.Size = new System.Drawing.Size(45, 16);
+            this.radioButtonBetter2.TabIndex = 1;
+            this.radioButtonBetter2.Text = "Bob";
+            this.radioButtonBetter2.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // radioButtonBetter3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Checked = true;
-            this.radioButton3.Location = new System.Drawing.Point(23, 111);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(34, 16);
-            this.radioButton3.TabIndex = 1;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Al";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.radioButtonBetter3.AutoSize = true;
+            this.radioButtonBetter3.Checked = true;
+            this.radioButtonBetter3.Location = new System.Drawing.Point(23, 111);
+            this.radioButtonBetter3.Name = "radioButtonBetter3";
+            this.radioButtonBetter3.Size = new System.Drawing.Size(34, 16);
+            this.radioButtonBetter3.TabIndex = 1;
+            this.radioButtonBetter3.TabStop = true;
+            this.radioButtonBetter3.Text = "Al";
+            this.radioButtonBetter3.UseVisualStyleBackColor = true;
             // 
             // labelBetterName
             // 
@@ -227,11 +236,63 @@ namespace DayAtTheRace
             this.buttonRace.Text = "Race!";
             this.buttonRace.UseVisualStyleBackColor = true;
             // 
+            // pictureBoxDog1
+            // 
+            this.pictureBoxDog1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxDog1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBoxDog1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBoxDog1.Image")));
+            this.pictureBoxDog1.Location = new System.Drawing.Point(53, 23);
+            this.pictureBoxDog1.Name = "pictureBoxDog1";
+            this.pictureBoxDog1.Size = new System.Drawing.Size(100, 29);
+            this.pictureBoxDog1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBoxDog1.TabIndex = 2;
+            this.pictureBoxDog1.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(53, 78);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 29);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
+            this.pictureBox2.Location = new System.Drawing.Point(53, 143);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(100, 29);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 2;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
+            this.pictureBox3.Location = new System.Drawing.Point(53, 206);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(100, 29);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox3.TabIndex = 2;
+            this.pictureBox3.TabStop = false;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(827, 526);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pictureBoxDog1);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.raceTrack);
             this.Name = "Form1";
@@ -242,6 +303,10 @@ namespace DayAtTheRace
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownCash)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDownDogNum)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxDog1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -250,20 +315,24 @@ namespace DayAtTheRace
 
         private System.Windows.Forms.PictureBox raceTrack;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label labelInform1;
         private System.Windows.Forms.Label labelBets;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelInform3;
+        private System.Windows.Forms.Label labelInform2;
         private System.Windows.Forms.Label labelMinimumBet;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.RadioButton radioButtonBetter3;
+        private System.Windows.Forms.RadioButton radioButtonBetter2;
+        private System.Windows.Forms.RadioButton radioButtonBetter1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.NumericUpDown numericUpDownCash;
         private System.Windows.Forms.Button buttonBets;
         private System.Windows.Forms.Label labelBetterName;
         private System.Windows.Forms.Button buttonRace;
         private System.Windows.Forms.NumericUpDown numericUpDownDogNum;
+        private System.Windows.Forms.PictureBox pictureBoxDog1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 

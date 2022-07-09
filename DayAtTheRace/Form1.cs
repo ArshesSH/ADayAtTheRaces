@@ -26,5 +26,10 @@ namespace DayAtTheRace
         {
 
         }
+
+        private void radioButtonBetter1_CheckedChanged( object sender, EventArgs e )
+        {
+
+        }
     }
 }
