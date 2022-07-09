@@ -8,7 +8,7 @@ using System.Drawing;
 
 namespace DayAtTheRace
 {
-    class Greyhound
+    public class Greyhound
     {
         // Member funcs
         public bool Run()

@@ -5,9 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace DayAtTheRace
 {
-    class Guy
+    public class Guy
     {
         public class Bet
         {
@@ -24,16 +25,18 @@ namespace DayAtTheRace
                     return bettor.name + dogNum;
                 }
 
-                return bettor.name + bettor.cash + dogNum;
+                return bettor.name +" "+ bettor.cash +" " + dogNum;
             }
-            public int PayOut( int winner )
+            public int PayOut( int dogWinner )
             {
                 // The parameter is the winner of the race.
                 // If the dog won, return the amount bet.
                 // else return the negative of the amount bet
-                
-
-                return 0;
+                if( dogWinner == dogNum)
+                {
+                    return amount;
+                }
+                return -amount;
             }
 
             public int amount = 0;
@@ -41,12 +44,21 @@ namespace DayAtTheRace
             public Guy bettor = null;
         }
 
+        public Guy( string name_in )
+        {
+            bet = new Bet();
+            name = name_in;
+        }
 
         // Memeber Funcs
         public void UpdateLabels()
         {
             // Set label to my bet's description
             // and the label on my radio button to show my cash
+            label = new Label();
+            label.Text = bet.GetDescription();
+
+
         }
 
         public void ClearBet()
@@ -57,6 +69,8 @@ namespace DayAtTheRace
         public void Collect(int winner)
         {
             // ask my bet to pay out
+            bet.PayOut( winner );
+
         }
 
 
