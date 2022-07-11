@@ -10,19 +10,27 @@ namespace DayAtTheRace
 {
     public class Greyhound
     {
+        public Greyhound(Random RandomIn, PictureBox PicturBoxIn, int RaceTrackLengthIn)
+        {
+            randomizer = RandomIn;
+            pictureBox = PicturBoxIn;
+            raceTrackLength = RaceTrackLengthIn;
+            startPos = pictureBox.Location.X;
+            curPos = startPos;
+        }
+
         // Member funcs
         public bool Run()
         {
             // Move forward either 1, 2, 3, or 4 space at random
-            curPos += randomizer.Next( 1, 4 );
+            curPos += randomizer.Next( 1, 5 );
 
             // Update the position of pictureBox on the form
-            Point p = pictureBox.Location;
-            p.X = curPos;
-            pictureBox.Location = p;
+            UpdatePicturBoxAsCurPos();
+            pictureBox.Update();
 
             // Return true if This won the race
-            if(curPos >= raceTrackLength)
+            if(curPos >= raceTrackLength - pictureBox.Width - raceFinPos)
             {
                 return true;
             }
@@ -33,14 +41,24 @@ namespace DayAtTheRace
         {
             // Reset Location to start line
             curPos = startPos;
+            UpdatePicturBoxAsCurPos();
+            pictureBox.Update();
+        }
+
+        private void UpdatePicturBoxAsCurPos()
+        {
+            Point p = pictureBox.Location;
+            p.X = curPos;
+            pictureBox.Location = p;
         }
 
 
         // Memeber vars
+        private readonly int raceFinPos = 30;
         public PictureBox pictureBox = null;
         public Random randomizer = null;
-        public int startPos = 0;
-        public int raceTrackLength = 0;
-        public int curPos = 0;
+        public int startPos;
+        public int raceTrackLength;
+        public int curPos;
     }
 }

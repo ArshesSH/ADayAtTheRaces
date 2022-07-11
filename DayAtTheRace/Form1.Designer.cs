@@ -128,7 +128,6 @@
             0,
             0,
             0});
-            this.numericUpDownDogNum.ValueChanged += new System.EventHandler(this.numericUpDownDogNum_ValueChanged);
             // 
             // label4
             // 
